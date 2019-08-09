@@ -1,3 +1,14 @@
+"""
+* button_a will always increase values and button_b will always decrease values
+* press both the button at the same time to change the color between r,g and b
+* look at the red led (located just beside the micro usb port) if it's glowing
+then the current color is red and you can change the values using buttons. If
+the red led is blinking then the current color is green and if the led is not
+glowing anymore then the color is blue.
+* you can use the switch to control brightness. Just turn on the switch then
+button_a will increase brightness and button_b will decrease it.
+"""
+
 from adafruit_circuitplayground.express import cpx
 from time import sleep
 r,g,b = 0,0,0
