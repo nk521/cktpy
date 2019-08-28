@@ -18,6 +18,9 @@ Example:
 	ALT F4
 Button A will trigger MODE1.
 Button B will trigger MODE2.
++------------------------------------------------+
+| NOTE: YOU CAN'T PRESS MORE THAN 6 KEYS AT ONCE.|
++------------------------------------------------+
 """
 
 from adafruit_circuitplayground.express import cpx
