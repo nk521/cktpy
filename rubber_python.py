@@ -1,6 +1,6 @@
 """
 Example:
-    #MODE1
+	#MODE1
 	WINDOWS R
 	DELAY 0.5
 	STRING cmd
