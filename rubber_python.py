@@ -1,3 +1,25 @@
+"""
+Example:
+    #MODE1
+	WINDOWS R
+	DELAY 0.5
+	STRING cmd
+	ENTER
+	DELAY 1
+	n\ n/ n1 n* n+ n`
+	DELAY 1.5
+	CONTROL C
+	DELAY 1
+	STRING exit
+	ENTER
+	#MODE2
+	WINDOWS E
+	DELAY 0.5
+	ALT F4
+Button A will trigger MODE1.
+Button B will trigger MODE2.
+"""
+
 from adafruit_circuitplayground.express import cpx
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
@@ -129,7 +151,7 @@ def drop(payload):
             setter = 1
 
         if line[0] == "DELAY":
-            sleep(int(line[1]))
+            sleep(float(line[1]))
             timer = 1
 
         if not setter and not timer:
